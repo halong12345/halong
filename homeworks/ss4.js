@@ -4,7 +4,7 @@
 // if ((year % 4 === 0 && year % 100 !== 0)|| (year % 100 === 0 && year % 400 === 0))
 // {
 //     console.log("Năm có 366 ngày");
-    
+
 // }
 // else {
 //     console.log(" Năm có 365 ngày");
@@ -29,7 +29,7 @@
 // {
 //     console.log("nhập tháng sai");
 // }
-    
+
 // // Bài 3.Nhập vào 1 tháng trong năm, in ra mùa của tháng đó.
 // let month = parseInt(prompt("Nhập tháng"));
 // if ( month >= 2  && month <= 4) {
@@ -87,63 +87,68 @@
 // // Bài 5. Nhập vào 3  số a, b, c. Kiểm tra xem 3 số đó có lập được
 // // thành tam giác không. Nếu có, kiểm tra xem tam giác có vuông, cân hay đều k?
 
-// let a = prompt(" nhập a ");
-// let b = prompt(" nhập b ");
-// let c = prompt(" nhập c ");
-// if ((a + b) > c || (a + c)> b || ( b + c )> a) {
-//     console.log("là 3 cạnh của tam giác");{
-//         if ( ((a**2 + b**2) === c**2) || ((a**2 + c**2) === b**2) || ((b**2 + c**2) === a**2)) {
+// let a = Number(prompt(" nhập a "));
+// let b = Number(prompt(" nhập b "));
+// let c = Number(prompt(" nhập c "));
+// if (((a + b) > c) && ((a + c) > b) && ((b + c) > a)) {
+//     console.log("là 3 cạnh của tam giác"); {
+//         if (((a ** 2 + b ** 2) === c ** 2) || ((a ** 2 + c ** 2) === b ** 2) || ((b ** 2 + c ** 2) === a ** 2)) {
 //             console.log("tam giác vuông");
 //         }
-//         if ( (a === b && b !== c) || ( b === c && c !== a) || ( a === c && c !== b)) {
+//         if ((a === b && b !== c) || (b === c && c !== a) || (a === c && c !== b)) {
 //             console.log("tam giác cân");
-     
+
 //         }
-//         if ( a === b && b === c ) {
+//         if (a === b && b === c) {
 //             console.log("tam giác đều");
-            
-//         }
-    
-            
+
 //         }
 
+
 //     }
-// if ((a + b) <= c || (a + c) <= b || ( b + c )<= a){
+
+// } else {
 //     console.log(" ko phải 3 cạnh tam giác");
-    
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+
+
+
+
 // }
 // anh sửa bài này giúp em .
 
 // Bài 6 :Cho thông tin bảng giá điện sau. Nhập vào số điện sử dụng của 1 hộ trong tháng. 
 // In ra chi tiết số tiền từng bậc và tổng số tiền phải trả.
 // let x = parseInt(prompt("nhập số điện"));
-// let a = x ** 1.678;
-// let b = (x - 50)** 1.734;
-// let c = (x - 100)** 2.014;
-// let d = (x - 200)** 2.536;
-// let e = (x - 300)** 2.834;
-// let f = (x - 400)** 2.927;
-// let a1 = 50 ** 1.678;
-// let b1 = 50 ** 1.734;
-// let c1 = 100** 2.014;
-// let d1 = 100** 2.536;
-// let e1 = 100** 2.834;
+// let a = x * 1.678;
+// let b = (x - 50)* 1.734;
+// let c = (x - 100)* 2.014;
+// let d = (x - 200)* 2.536;
+// let e = (x - 300)* 2.834;
+// let f = (x - 400)* 2.927;
+// let a1 = 50 * 1.678;
+// let b1 = 50 * 1.734;
+// let c1 = 100* 2.014;
+// let d1 = 100* 2.536;
+// let e1 = 100* 2.834;
 // if ( x > 0 && x <= 50 ) {
-//     console.log("tiền bậc 1 và tổng số tiền là " ,$a );   
+//     console.log(`tiền bậc 1 và tổng số tiền là  ${a }`);   
 // }
 // if ( x > 50 && x <= 100 ){
-//     console.log(" tiền bậc 1 là ",$a1);
-//     console.log(" tiền bậc 2 là ",$b);
-//     console.log(" tổng tiền là ",$a1 +$b);   
+//     console.log(`tiền bậc 1 là ${a1}`);
+//     console.log(` tiền bậc 2 là ${b}`);
+//     console.log(`tổng tiền là ${a1 +$b});   
 // }
 // if ( x > 100 && x <= 200){
-//     console.log(" tiền bậc 1 là ",$a1);
-//     console.log(" tiền bậc 2 là ",$b1);
-//     console.log(" tiền bậc 3 là ",$c);
-//     console.log(" tổng tiền là ",$a1 + $b1 + $c);
+//     console.log(` tiền bậc 1 là ${a1}`);
+//     console.log(` tiền bậc 2 là ${b1}`);
+//     console.log(` tiền bậc 3 là ${c}`);
+//     console.log(` tổng tiền là ${a1 + $b1 + $c}`);
 // }
 // if ( x > 200 && x<= 300){
-//     console.log(" tiền bậc 1 là ",$a1);
+//     console.log(` tiền bậc 1 là ${a1}`);
 //     console.log(" tiền bậc 2 là ",$b1);
 //     console.log(" tiền bậc 3 là ",$c1);
 //     console.log(" tiền bậc 4 là ",$d);
@@ -176,7 +181,7 @@
 // if( BMI < 18.5){
 //     console.log("thể trạng gầy"); 
 // }
-// if ( BMI >= 18.5 && BMI <= 24.9 ){
+// if ( BMI >= 18.5 && BMI <= 24.9 ){         // else if(BMI <= 24.9)
 //     console.log(" thể trạng bình thường");
 // }
 // if ( BMI >=25 && BMI <= 29.9){

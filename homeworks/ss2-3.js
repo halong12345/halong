@@ -26,7 +26,7 @@
 // // Bài 3b 
 // let x = prompt("Nhập giá trị x ");
 // const PI = 3.14;
-// let y2 = ( Math.cos(PI*x**2)+ Math.sqrt(x**2 + 1))/((Math.E)**(2*x)+(Math.cos(PI*4/x));
+// let y2 = ( Math.sin(PI*x**2)+ Math.sqrt(x**2 + 1))/(((Math.E)**(2*x))+(Math.cos(PI*4/x)));
 // console.log(y2);
 // alert(y2);
 // bài này em chạy bị lỗi anh xem giúp em bài này
@@ -34,7 +34,7 @@
 // // Bài 4.Nhập vào số tiền X vnđ (giả sử số tiền là bội số của 10.000vnđ), đổi xem số tiền đó được bao nhiêu tờ 100.000, 50.000, 20.000, 10.000 vnđ.
 // //Ví dụ: 320.000 vnđ = 3 tờ 100.000 + 0 tờ 50.000 + 1 tờ 20.000 + 0 tờ 10.000 vnđ
 // let x = parseInt(prompt("Nhập số tiền "));
-// let a = parseInt(x/100000);
+// let a = parseInt(x/100000);                             // let a = math.floor(x/100000);
 // let b = parseInt((x % 100000)/50000);
 // let c = parseInt(((x % 100000)%50000)/20000);
 // let d = parseInt((((x % 100000)%50000)%20000)/10000);
